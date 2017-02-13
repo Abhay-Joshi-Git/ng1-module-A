@@ -1,10 +1,6 @@
 (function() {
   'use strict';
 
-  angular.module('moduleA', ['shared']);
-})();;(function() {
-  'use strict';
-
   var module = angular.module('moduleA');
 
   module.directive('analytics', [
@@ -25,11 +21,3 @@
       };
     }]);
 })();
-;angular.module('moduleA').run(['$templateCache', function($templateCache) {
-  'use strict';
-
-  $templateCache.put('dataAnalytics/analytics.html',
-    "<div>{{analytics}}</div>"
-  );
-
-}]);
