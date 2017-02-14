@@ -29,7 +29,13 @@
   'use strict';
 
   $templateCache.put('dataAnalytics/analytics.html',
-    "<div>{{analytics}}</div>"
+    "<div>\n" +
+    "    {{analytics}}\n" +
+    "\n" +
+    "    <br />\n" +
+    "\n" +
+    "    <img src=\"images/analytics.png\"\n" +
+    "</div>"
   );
 
 }]);

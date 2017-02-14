@@ -14,11 +14,17 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: pkg,
         copy: {
-                files: {
+                html: {
                     cwd: 'src',
                     src: 'index.html',
                     dest: 'dist',
                     expand: true
+                },
+                images: {
+                        cwd: 'images',
+                        src: ['*.png'],
+                        dest: 'dist/images',
+                        expand: true
                 }
         },
 
